@@ -50,3 +50,62 @@
 2026-04-26 12:20:10,857 | INFO | __main__ | class miETL ... se realiza transformacion y reglas de negocio
 2026-04-26 12:20:10,859 | INFO | __main__ | class miETL ... Inicio cargaHistDB
 2026-04-26 12:20:10,863 | INFO | __main__ | class miETL ... FIN cargaHistDB
+2026-04-26 14:12:56,689 | INFO | __main__ | class miETL ---Inicio leeAPI---
+2026-04-26 14:12:57,707 | INFO | httpx | HTTP Request: GET https://www.banxico.org.mx/SieAPIRest/service/v1/series/SF43718,SP68257,SF331451,SF43773/datos/2027-01-01/2026-01-01 "HTTP/1.1 200 OK"
+2026-04-26 14:12:57,710 | WARNING | __main__ | class miETL ...leeAPI, Serie SF43773 no trae clave 'datos'
+2026-04-26 14:12:57,710 | WARNING | __main__ | class miETL ...leeAPI, Serie SF43718 no trae clave 'datos'
+2026-04-26 14:12:57,710 | WARNING | __main__ | class miETL ...leeAPI, Serie SF331451 no trae clave 'datos'
+2026-04-26 14:12:57,710 | WARNING | __main__ | class miETL ...leeAPI, Serie SP68257 no trae clave 'datos'
+2026-04-26 14:12:57,710 | INFO | __main__ | class miETL ---Fin leeAPI OK---
+2026-04-26 14:12:57,710 | INFO | __main__ | class miETL ... Inicio haceParquetDesdeJson
+2026-04-26 14:12:57,739 | INFO | __main__ | class miETL ... Fin haceParquetDesdeJson generado en S3/parquets/raw_orginal_api_banxico_20260426_141256.parquet
+2026-04-26 14:12:57,739 | INFO | __main__ | class miETL ... cargaRawStageDB
+2026-04-26 14:12:57,739 | WARNING | __main__ | class miETL ... Serie SF43773 no trae 'datos'
+2026-04-26 14:12:57,739 | WARNING | __main__ | class miETL ... Serie SF43718 no trae 'datos'
+2026-04-26 14:12:57,739 | WARNING | __main__ | class miETL ... Serie SF331451 no trae 'datos'
+2026-04-26 14:12:57,739 | WARNING | __main__ | class miETL ... Serie SP68257 no trae 'datos'
+2026-04-26 14:12:57,742 | INFO | __main__ | class miETL ... se insertan 0 registros en Db raw
+2026-04-26 14:18:47,992 | INFO | __main__ | class miETL ---Inicio leeAPI---
+2026-04-26 14:18:48,798 | INFO | httpx | HTTP Request: GET https://www.banxico.org.mx/SieAPIRest/service/v1/series/SF43718,SP68257,SF331451,SF43773/datos/2027-01-01/2026-01-01 "HTTP/1.1 200 OK"
+2026-04-26 14:18:48,801 | WARNING | __main__ | class miETL ...leeAPI, Serie SF331451 no trae clave 'datos'
+2026-04-26 14:18:48,801 | WARNING | __main__ | class miETL ...leeAPI, Serie SF43773 no trae clave 'datos'
+2026-04-26 14:18:48,801 | WARNING | __main__ | class miETL ...leeAPI, Serie SF43718 no trae clave 'datos'
+2026-04-26 14:18:48,801 | WARNING | __main__ | class miETL ...leeAPI, Serie SP68257 no trae clave 'datos'
+2026-04-26 14:19:35,270 | INFO | __main__ | class miETL ---Inicio leeAPI---
+2026-04-26 14:19:36,071 | INFO | httpx | HTTP Request: GET https://www.banxico.org.mx/SieAPIRest/service/v1/series/SF43718,SP68257,SF331451,SF43773/datos/2027-01-01/2026-01-01 "HTTP/1.1 200 OK"
+2026-04-26 14:19:36,074 | WARNING | __main__ | class miETL ...leeAPI, Serie SF331451 no trae clave 'datos'
+2026-04-26 14:19:36,074 | WARNING | __main__ | class miETL ...leeAPI, Serie SF43718 no trae clave 'datos'
+2026-04-26 14:19:36,074 | WARNING | __main__ | class miETL ...leeAPI, Serie SF43773 no trae clave 'datos'
+2026-04-26 14:19:36,074 | WARNING | __main__ | class miETL ...leeAPI, Serie SP68257 no trae clave 'datos'
+2026-04-26 14:20:03,467 | INFO | __main__ | class miETL ---Inicio leeAPI---
+2026-04-26 14:20:04,233 | INFO | httpx | HTTP Request: GET https://www.banxico.org.mx/SieAPIRest/service/v1/series/SF43718,SP68257,SF331451,SF43773/datos/2027-01-01/2026-01-01 "HTTP/1.1 200 OK"
+2026-04-26 14:20:04,234 | WARNING | __main__ | class miETL ...leeAPI, Serie SF43718 no trae clave 'datos'
+2026-04-26 14:20:04,234 | WARNING | __main__ | class miETL ...leeAPI, Serie SP68257 no trae clave 'datos'
+2026-04-26 14:20:04,234 | WARNING | __main__ | class miETL ...leeAPI, Serie SF43773 no trae clave 'datos'
+2026-04-26 14:20:04,234 | WARNING | __main__ | class miETL ...leeAPI, Serie SF331451 no trae clave 'datos'
+2026-04-26 14:20:04,234 | WARNING | __main__ | class miETL ...leeAPI, el json no tiene ningun datos en las series
+2026-04-26 14:20:53,313 | INFO | __main__ | class miETL ---Inicio leeAPI---
+2026-04-26 14:20:54,259 | INFO | httpx | HTTP Request: GET https://www.banxico.org.mx/SieAPIRest/service/v1/series/SF43718,SP68257,SF331451,SF43773/datos/2027-01-01/2026-01-01 "HTTP/1.1 200 OK"
+2026-04-26 14:20:54,261 | WARNING | __main__ | class miETL ...leeAPI, Serie SF43718 no trae clave 'datos'
+2026-04-26 14:20:54,262 | WARNING | __main__ | class miETL ...leeAPI, Serie SP68257 no trae clave 'datos'
+2026-04-26 14:20:54,262 | WARNING | __main__ | class miETL ...leeAPI, Serie SF43773 no trae clave 'datos'
+2026-04-26 14:20:54,262 | WARNING | __main__ | class miETL ...leeAPI, Serie SF331451 no trae clave 'datos'
+2026-04-26 14:20:54,262 | ERROR | __main__ | class miETL ...leeAPI, el json no tiene ningun datos en las series
+2026-04-26 14:21:41,009 | INFO | __main__ | class miETL ---Inicio leeAPI---
+2026-04-26 14:21:41,009 | ERROR | __main__ | class miETL ... Formato fechas no válido
+2026-04-26 14:22:02,798 | INFO | __main__ | class miETL ---Inicio leeAPI---
+2026-04-26 14:22:03,692 | INFO | httpx | HTTP Request: GET https://www.banxico.org.mx/SieAPIRest/service/v1/series/SF43718,SP68257,SF331451,SF43773/datos/2026-01-01/2026-01-01 "HTTP/1.1 200 OK"
+2026-04-26 14:22:03,695 | WARNING | __main__ | class miETL ...leeAPI, Serie SF43718 no trae clave 'datos'
+2026-04-26 14:22:03,695 | WARNING | __main__ | class miETL ...leeAPI, Serie SF43773 no trae clave 'datos'
+2026-04-26 14:22:03,695 | WARNING | __main__ | class miETL ...leeAPI, Serie SF331451 no trae clave 'datos'
+2026-04-26 14:22:03,695 | INFO | __main__ | class miETL ---Fin leeAPI OK---
+2026-04-26 14:22:03,696 | INFO | __main__ | class miETL ... Inicio haceParquetDesdeJson
+2026-04-26 14:22:03,708 | INFO | __main__ | class miETL ... Fin haceParquetDesdeJson generado en S3/parquets/raw_orginal_api_banxico_20260426_142202.parquet
+2026-04-26 14:22:03,709 | INFO | __main__ | class miETL ... cargaRawStageDB
+2026-04-26 14:22:03,709 | WARNING | __main__ | class miETL ... Serie SF43718 no trae 'datos'
+2026-04-26 14:22:03,709 | WARNING | __main__ | class miETL ... Serie SF43773 no trae 'datos'
+2026-04-26 14:22:03,709 | WARNING | __main__ | class miETL ... Serie SF331451 no trae 'datos'
+2026-04-26 14:22:03,710 | INFO | __main__ | class miETL ... se insertan 1 registros en Db raw
+2026-04-26 14:22:03,730 | INFO | __main__ | class miETL ... se realiza transformacion y reglas de negocio
+2026-04-26 14:22:03,740 | INFO | __main__ | class miETL ... Inicio cargaHistDB
+2026-04-26 14:22:03,752 | INFO | __main__ | class miETL ... FIN cargaHistDB
